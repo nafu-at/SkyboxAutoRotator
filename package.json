@@ -1,0 +1,12 @@
+{
+    "name": "dev.nafusoft.skyboxautorotator",
+    "version": "1.0.0",
+    "displayName": "SkyboxAutoRotator",
+    "description": "Script to automatically rotate the skybox",
+    "author": {
+        "name": "Nafu Satsuki",
+        "email": "satsuki@nafusoft.dev",
+        "url": "https://nafusoft.dev/"
+    },
+    "lisence": "MIT"
+}
