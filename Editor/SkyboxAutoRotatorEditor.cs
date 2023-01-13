@@ -16,10 +16,12 @@ namespace NafuSoft.SkyboxAutoRotater
 
             // draw rotation value
             EditorGUI.BeginDisabledGroup(rotater.isAutoRotate);
-            var rotateValueInput = EditorGUILayout.FloatField("Rotate", rotater.rotateValue);
+            var rotateValueInput = EditorGUILayout.FloatField("Rotation", rotater.rotateValue);
             if (rotater.isAutoRotate == false && rotateValueInput != rotater.rotateValue)
                 rotater.rotateValue = rotateValueInput;
             EditorGUI.EndDisabledGroup();
+
+            EditorGUILayout.HelpBox("このスクリプトがアタッチされている場合、他のスクリプトからSkyboxのRotationを変更することはできません。", MessageType.Warning);
 
             serializedObject.ApplyModifiedProperties();
         }
