@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace NafuSoft.SkyboxAutoRotater
@@ -8,8 +9,8 @@ namespace NafuSoft.SkyboxAutoRotater
         [SerializeField] public bool isAutoRotate;
         [SerializeField] public float rotateSpeed = 0.1f;
 
-        public float rotateValue;
-        public Material targetSkybox;
+        [NonSerialized] public float rotateValue;
+        private Material targetSkybox;
 
         // Start is called before the first frame update
         private void Start()
